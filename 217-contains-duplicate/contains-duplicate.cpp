@@ -4,7 +4,7 @@ public:
         unordered_set<int> m;
         for(int num=0;num<nums.size();num++)
         {
-          if(m.contains(nums[num]))
+          if(m.find(nums[num])!=m.end())
           return true;
           m.insert(nums[num]);
         }
