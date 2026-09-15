@@ -4,9 +4,9 @@ public:
         int maxi=INT_MIN;
         int s=0;
        
-        for(int i=0;i<nums.size();i++){
+        for(int &I : nums){
             
-            s+=nums[i];
+            s+=I;
             maxi=max(maxi,s);
             if(s<0)
             s=0;
