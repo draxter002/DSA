@@ -7,9 +7,9 @@ public:
             
             s+=I;
             maxi=max(maxi,s);
-            if(s<0)
+            if(s<0){
             s=0;
-            
+            }
         }
         return maxi;
         
