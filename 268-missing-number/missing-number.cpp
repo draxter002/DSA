@@ -11,8 +11,8 @@ public:
             }
 
         }
-        int a=*s.begin();
-        return a;
+        
+        return *s.begin();
 
 
         
