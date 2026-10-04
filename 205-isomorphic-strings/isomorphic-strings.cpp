@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         map<char,char> m;
-        map<char,char> n;
+        set<char> n;
         for(int p=0;p<s.size();p++){
             if(m.find(s[p])!=m.end())
             s[p]=m[s[p]];
@@ -10,7 +10,7 @@ public:
             return false;
             else{
                 m[s[p]]=t[p];
-                n[t[p]]=s[p];
+                n.insert(t[p]);
                
                 s[p]=t[p];
             }
