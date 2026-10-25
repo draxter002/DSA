@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        long temp=x,s=0,a;
+        long temp=x,s=0;
         while(x>0)
         {
-            a=x%10;
-            s=s*10+a;
+            
+            s=s*10+(x%10);
             x=x/10;
         }
         if(s==temp)
